@@ -1,0 +1,230 @@
+:root{
+    --wb-shadow-level-1: 0 0 2px 0 rgba(0,0,0,.1),0 2px 4px 0 rgba(0,0,0,.1);
+
+}
+*{  
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Hubballi', cursive;
+}
+body{
+    overflow:hidden scroll;
+}
+.nav{
+    /* padding:20px; */
+    position:fixed;
+    list-style-type:none;
+    position:relative;
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 10%),0px 8px 16px rgb(0 0 0 / 10%);
+}
+.logo{
+    height: 100%;
+    display: flex;
+    justify-content:center;
+
+}
+.logo img{
+    height: 100%;
+    object-fit: contain;
+}
+.content-nav{
+    display:flex;
+    align-items:center;
+}
+.content-info{
+    display:flex;
+    align-items:center;
+
+}
+.content-nav li{
+    line-height:72.6px;
+    margin-left:20px;
+    /* height:100%; */
+    /* padding:20px 0px 20px 0px; */
+}
+.nav li:last-child{
+    border-right:none;
+}
+.icon-func{
+    float:right !important;
+    margin-right:20px;
+}
+.fa-solid{
+    font-size: 25px;
+    /* padding-top:5px; */
+}
+.nav li a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+}
+.content-nav .contain-body:hover{
+    background-color: rgba(0, 0, 0, 0.575);
+}
+.content-nav .contain-body:hover a{
+    color: white;
+}
+
+.info-user{
+    width:60px;
+    height:60px;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 10%),0px 8px 16px rgb(0 0 0 / 10%);
+    border-radius:50%;
+}
+.info-user img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+.search{
+    position:relative;
+}
+.search i{
+    position:absolute;
+    right:10px;
+    bottom:5px;
+}
+.input-search{
+    outline:none;
+    height:35px;
+    border:none;
+    border:1px solid rgba(0, 0, 0, 0.274);
+    border-radius:15px;
+    padding:10px;
+}
+
+.container-models{
+    display:none;
+    z-index: 1000;
+    position:absolute;
+    width:102px;
+}
+
+.hover-contain-body:hover .container-models{
+    position:absolute;
+    display:block;
+    z-index: 1000;
+    color:black;
+    background-color:white;
+}
+.hover-contain-body:hover .container-models a{
+    color:black;
+    background-color:white;
+}
+
+.content-models:hover{
+    background-color:black;
+    color:white;
+}
+
+.content-models:hover a{
+    background-color:black !important;
+    color:white !important;
+}
+
+.top-up {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    text-align: center;
+}
+
+
+.top-up-icon{
+    font-size: 35px !important;
+    border-radius: 50%;
+    background-color: rgb(246, 246, 246);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    transform: translateY(-50px);
+}
+/* information */
+.hover-info-user{
+    position:relative;
+}
+.info-user-content{
+    visibility: hidden;
+    position: absolute;
+    top:70px;
+    /* padding:20px; */
+    left:-0px;
+    z-index: 1000;
+    width:250px;
+    background-color:white;
+    /* border-radius: 10px; */
+    transition:all 0.3s ease-in-out;
+}
+.info-user-content-detail{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    padding:15px;
+    border:1px solid rgba(0, 0, 0, 0.185);
+}
+.icon-detail{
+    margin-right:20px;
+}
+.hover-info-user:hover .info-user-content{
+    visibility: visible;
+    left:-180px;
+    transition:all 0.3s ease-in-out;
+}
+/* notify */
+.hover-notify{
+    position:relative;
+}
+.info-notify{
+    visibility: hidden;
+    position: absolute;
+    top:55px;
+    /* padding:20px; */
+    left:-0px;
+    z-index: 1000;
+    width:350px;
+    background-color:white;
+    /* border-radius: 10px; */
+    transition:all 0.3s ease-in-out;
+    height:400px;
+    overflow:hidden scroll;
+}
+.info-notify-item{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+}
+.info-notify-img{
+    width:55px;
+    height:55px;
+    border-radius: 50%;
+    box-shadow:var(--wb-shadow-level-1);
+    margin:10px;
+}
+.info-notify-img img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.info-notify-description span{
+    font-size:18px;
+    font-weight:500;
+}
+.hover-notify:hover .info-notify{
+    visibility: visible;
+    left:-280px;
+    transition:all 0.3s ease-in-out;
+}
