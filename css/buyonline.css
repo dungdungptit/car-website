@@ -9,10 +9,46 @@
 body{
     background-color:#f4f4f4;
 }
+/* scroll bar =================================================================================================*/
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(155, 148, 148);
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: rgba(122, 118, 118, 0.671);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #585757;
+}
+
+
+/* end scroll bar================================================================================================*/
+
 .container-build{
     padding-top:0px;    
     position:relative;
     /* text-align:center; */
+    flex-direction:column;
     display:flex;
     justify-content:center;
 } 
@@ -31,10 +67,9 @@ body{
     font-size:50px;
 }
 .content-des{
-    position:absolute;
-    top:200px;
+    position:relative;
+    top:-100px;
     width:100%;
-    /* margin:20px; */
 }
 .content-filter{
     margin:40px;
@@ -115,16 +150,27 @@ body{
     margin-bottom:20px;
 }
 .display_flex{
-    display:flex;
-    justify-content:space-around;
-    flex-direction:row;
-    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
 }
 .content-item-info{
     display:flex;
     flex-direction:column;
     text-align:center;
 }
+
+.content-item-img{
+    width:100%;
+    /* height:200px; */
+}
+
+.content-item-img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
 .content-item-info-title{
     font-size:30px;
     font-weight:600;

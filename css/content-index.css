@@ -2,6 +2,41 @@
     --wb-shadow-level-1: 0 0 2px 0 rgba(0,0,0,.1),0 2px 4px 0 rgba(0,0,0,.1);
 
 }
+/* scroll bar =================================================================================================*/
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(155, 148, 148);
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: rgba(122, 118, 118, 0.671);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #585757;
+}
+
+
+/* end scroll bar================================================================================================*/
+
 .container-build{
     position: relative;
 }
@@ -349,4 +384,12 @@
     visibility:visible;
     transition: all 0.3s ease-in-out;
     bottom:20px;
+}
+@media screen and (max-width: 1330px) {
+    .container-vehicles-list{
+        margin:0;
+    }
+    .content-slider-item-img{
+        height:55vh;
+    }
 }

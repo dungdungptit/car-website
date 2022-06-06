@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <!-- font awesome -->
+        <link rel="stylesheet"
+            href="fontawesome-free-6.0.0-web\fontawesome-free-6.0.0-web\css\all.min.css"
+            />
+        <title>Home</title>
+        <link rel="stylesheet" href="css/nav.css">
+        <!--  slider  -->
+        <!--Owl  carousel ---------------   ------- ------------------------------>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- box icons----------------------------------------------- -->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'
+            rel='stylesheet'>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap"
+            rel="stylesheet">
+        <!-- icon gg -->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+            />
+        <!-- style content -->
+        <link rel="stylesheet" href="css/footer.css">
+        <style>
+        .container-register {
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        .container-register h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container-register form {
+            padding: 20px;
+        }
+        .container-register form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container-register form input[type="submit"] {
+            padding: 10px;
+            background-color: #337ab7;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        .container-register form input[type="submit"]:hover {
+            cursor: pointer;
+            background-color: #286090;
+        }
+        .container-register form input[type="submit"]:active {
+            background-color: #286090;
+        }
+        .container-register form input[type="submit"]:focus {
+            outline: none;
+        }
+        .container-register form .error {
+            color: #a94442;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .container-register form .success {
+            color: #3c763d;
+            font-weight: bold;
+        }
+
+    </style>
+    </head>
+    <body>
+        <nav id="header">
+            
+        </nav>
+        <!-- top up and message with server ------------------------>
+        <div class="container-register">
+            <!-- <div class="logo"> -->
+                <img src="img/logo.webp" alt="">
+            <!-- </div> -->
+            <div class="line">
+                <hr>
+            </div>
+            <form action="register.php" method="post">
+                <input type="text" name="username" placeholder="Tài khoản">
+                <input type="text" name="address" placeholder="Địa chỉ">
+                <input type="text" name="phone" placeholder="Số điện thoại">
+                <input type="text" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Mật khẩu">
+                <input type="password" name="password_confirmation"
+                    placeholder="Nhập lại mật khẩu">
+                <input type="submit" value="Đăng ký">
+                <input type="button" value="Đăng nhập" onclick="location.href='login.html';">
+            </form>
+        </div>
+        <div class="margin_top style-for-footer">
+            
+        </div>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+
+        <!-- owl carousel------------------------------------------------------->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+        <!-- boxicons -->
+        <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+        <script src="js/slider.js"></script>
+        <script src="js/clicked.js"></script>
+        <script src="js/scroll.js"></script>
+        <script>
+            $(document).ready(()=>{
+                $("#header").load("header.html");
+                $(".style-for-footer").load("footer.html");
+            })
+        </script>
+    </body>
+</html>
